@@ -5,26 +5,24 @@ import Service from "../Service/Service";
 
 const Services = ({ showAll }) => {
   const [therapyServices] = useTherapy();
-  const showTherapy = showAll ? therapyServices : therapyServices.slice(0, 3);
+  const showTherapy = showAll ? therapyServices : therapyServices.slice(0, 6);
   return (
     <div
-      className={
-        showAll
-          ? "py-24 container mx-auto min-h-screen"
-          : "py-16 container mx-auto"
-      }
+      className={`py-24 px-3 md:px-0 container mx-auto
+      ${showAll && " min-h-screen"}
+      `}
     >
       <div
         className={
           showAll ? "text-center" : "flex justify-between items-center "
         }
       >
-        <h2 className="text-4xl font-semibold text-primary border-b-2 border-blue-300 inline-block pr-2 ">
+        <h2 className="text-2xl md:text-4xl font-semibold text-primary border-b-2 border-blue-300 inline-block pr-2 ">
           {showAll ? "Our All Services" : "Our services"}
         </h2>
         {showAll || (
           <Link to="/services">
-            <button className="flex justify-between items-center mr-3 px-2 py-1 hover:text-blue transition-all ">
+            <button className="flex text-sm md:text-xl justify-between items-center mr-3 px-2 py-1 hover:text-blue transition-all ">
               Show all Services
               <span>
                 <svg
@@ -47,7 +45,7 @@ const Services = ({ showAll }) => {
         )}
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-x-3 gap-y-5 mt-8">
+      <div className="grid lg:grid-cols-2 gap-x-3 gap-y-8 md:gap-y-5 mt-8">
         {showTherapy.map((therapy) => (
           <Service key={therapy.id} therapy={therapy} />
         ))}

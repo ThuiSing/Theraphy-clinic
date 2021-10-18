@@ -11,14 +11,14 @@ const Banner = () => {
     <div className="banner ">
       <div className="absolute banner-text w-full h-full flex justify-center items-center">
         <div className="text-center">
-          <h2 className=" text-5xl text-primary font-bold uppercase">
-            Welcome to our Therapy Center
+          <h2 className=" text-2xl md:text-5xl text-primary font-bold uppercase">
+            Welcome to our Therapy Clinic
           </h2>
-          <h4 className="text-3xl text-secondary font-semibold my-4">
+          <h4 className="texl-xl md:text-3xl text-secondary font-semibold my-4">
             We Give Solution To Your Pain
           </h4>
           <Link to="/contact-us">
-            <button className="bg-btn text-white px-3 py-2 rounded">
+            <button className="bg-btn text-white px-2 py-1 md:px-3 md:py-2 rounded">
               Contact Us
             </button>
           </Link>

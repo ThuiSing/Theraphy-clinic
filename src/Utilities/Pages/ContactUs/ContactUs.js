@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="container mx-auto min-h-screen py-16">
+    <div className="container mx-auto min-h-screen py-16 px-3 md:px-0">
       <div className="md:w-1/2 mx-auto">
         <div className="text-center mt-10 mb-4">
           <h3 className="text-4xl font-bold inline-block  border-b-2 border-blue-900">

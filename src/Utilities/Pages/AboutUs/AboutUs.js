@@ -1,6 +1,5 @@
 import React from "react";
 import img1 from "../../Images/about.jpg";
-import img2 from "../../Images/aboutChoose.png";
 
 const AboutUs = () => {
   return (
@@ -11,11 +10,11 @@ const AboutUs = () => {
             About Us
           </h3>
         </div>
-        <div className="flex justify-between  py-10">
-          <div className=" w-1/3 flex justify-center">
+        <div className="flex flex-col md:flex-row justify-between px-3 md:px-0  py-10">
+          <div className=" md:w-1/3 flex justify-center">
             <img src={img1} alt="" />
           </div>
-          <div className="w-2/3 py-4">
+          <div className="md:w-2/3 py-4">
             <h2 className="text-4xl font-bold text-primary">
               About Our Clinic
             </h2>
@@ -40,34 +39,6 @@ const AboutUs = () => {
                 Street across from the UT campus, by a handful of visionary
                 volunteer doctors and nurses.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className=" flex items-center bg-blue">
-        <div className="w-1/2 ">
-          <img src={img2} alt="" />
-        </div>
-        <div className="w-1/2 text-white py-3">
-          <h3 className="text-4xl font-semibold ">Why Choose Us</h3>
-          <p className="mt-4 text-xl">
-            We Proudly give quality, thorough chiropractic to the group and the
-            encompassing regions.
-          </p>
-          <div className="flex mt-6">
-            <div className="text-center">
-              <h2 className="text-5xl font-bold">25K</h2>
-              <h4 className="text-xl">Happy Customars</h4>
-            </div>
-
-            <div className="text-center ml-4">
-              <h2 className="text-5xl font-bold">7</h2>
-              <h4 className="text-xl">Years Experience</h4>
-            </div>
-
-            <div className="text-center ml-4">
-              <h2 className="text-5xl font-bold">99.9%</h2>
-              <h4 className="text-xl">Satisfaction</h4>
             </div>
           </div>
         </div>

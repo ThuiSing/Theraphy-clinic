@@ -8,12 +8,12 @@ import icon4 from "../../../Images/social-icons/youtube.png";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-footer text-white py-8 ">
+    <footer className="bg-footer text-white py-8 px-3 md:px-0 ">
       <div className="container mx-auto">
         <div>
           <h2 className="text-3xl font-semibold">Logo</h2>
         </div>
-        <div className="grid md:grid-cols-4 mt-8 border-b border-gray-700 pb-7">
+        <div className="grid md:grid-cols-4 mt-8 border-b border-gray-700 pb-7 gap-y-4 md:gap-y-0">
           <div>
             <h2 className="text-md font-semibold border-b-2 inline-block border-blue-300 pr-3 pb-1">
               Contact
@@ -72,7 +72,7 @@ const Footer = () => {
             <h2 className="text-md font-semibold border-b-2 inline-block border-blue-300 pr-3 pb-1">
               Follow us -
             </h2>
-            <div className="mt-4  flex justify-between items-center lg:w-4/5 ">
+            <div className="mt-4  flex justify-around md:justify-between items-center lg:w-4/5 ">
               <a href="https://www.facebook.com/">
                 <img className="w-10" src={icon1} alt="" />
               </a>
