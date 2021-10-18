@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Back Pain Therapy",
+    "img": "https://i.ibb.co/BTQB5G6/back-pain.png",
+    "description": "The best treatment for chronic lower and upper back pain is physical therapy. Doctors tend to prescribe this type of treatment first. You'll be under the guidance of a spine physical therapist who will guide you through a set of exercises. They'll tailor the exercises to your condition and specific symptoms."
+  },
+  {
+    "id": 2,
+    "name": "Headache Treatment",
+    "img": "https://i.ibb.co/DQyF4YJ/headache.png",
+    "description": "Almost everyone gets headaches, and many are nothing to worry about. But if headaches are disrupting your activities, work or personal life, it's time to see your doctor. Headaches can't always be prevented, but your doctor can help you manage the symptoms."
+  },
+  {
+    "id": 3,
+    "name": "Ankle Sprain Therapy",
+    "img": "https://i.ibb.co/CbfzszQ/Ankle-sprain.png",
+    "description": "An ankle sprain is a common injury. Inversion-type, lateral ligament injuries represent approximately 85% of all ankle sprains. The incidence of ankle sprain is highest in sports populations. Poor rehabilitation after an initial sprain increases the chances of this injury recurrence."
+  },
+  {
+    "id": 4,
+    "name": "Joint Replacement",
+    "img": "https://i.ibb.co/pd65yfY/Joint-Replacement.png",
+    "description": "Replacement arthroplasty, or joint replacement surgery, is a procedure of orthopedic surgery in which an arthritic or dysfunctional joint surface is replaced with an orthopedic prosthesis. Joint replacement is considered as a treatment when severe joint pain or dysfunction is not alleviated by less-invasive therapies."
+  },
+  {
+    "id": 5,
+    "name": "Muscular Dystrophy",
+    "img": "https://i.ibb.co/1s2DQnJ/Muscular-Dystrophy.png",
+    "description": "Treatment options include medications, physical and occupational therapy, and surgical and other procedures. Ongoing assessments of walking, swallowing, breathing and hand function enable the treatment team to adjust treatments as the disease progresses."
+  },
+  {
+    "id": 6,
+    "name": "Physio Therapy",
+    "img": "https://i.ibb.co/xhk9NcX/physiotherapy.png",
+    "description": "Treatment options include medications, physical and occupational therapy, and surgical and other procedures. Ongoing assessments of walking, swallowing, breathing and hand function enable the treatment team to adjust treatments as the disease progresses."
+  }
+]
