@@ -13,6 +13,7 @@ module.exports = {
     textColor: {
       primary: "#181818",
       secondary: "#2e2e2e",
+      red: "#cf0101",
       blue: "#4fc4cf",
       white: "#fffffe",
     },

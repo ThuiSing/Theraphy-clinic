@@ -6,6 +6,11 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen py-16 bg-secondary">
       <div className="container mx-auto ">
+        <div className="text-center mt-10 mb-4">
+          <h3 className="text-4xl font-bold inline-block  border-b-2 border-blue-900">
+            About Us
+          </h3>
+        </div>
         <div className="flex justify-between  py-10">
           <div className=" w-1/3 flex justify-center">
             <img src={img1} alt="" />

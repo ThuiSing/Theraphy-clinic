@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../../Hooks/useAuth";
 
 const Header = () => {
   const [bgActive, setBgActive] = useState(false);
+  const { user, logOut } = useAuth();
+  // console.log(user);
 
   window.addEventListener("scroll", () => {
     if (window.scrollY >= 20) {
@@ -54,10 +57,30 @@ const Header = () => {
             Contact us
           </NavLink>
         </div>
-        <div>
-          <button className="bg-btn rounded p-2">Sign in</button>
-          <button className="bg-btn rounded p-2 ml-3">Register</button>
-        </div>
+
+        {user.email ? (
+          <div className="flex items-center">
+            <img
+              className="rounded-full"
+              width="50"
+              src={user.photoURL}
+              alt=""
+            />
+            <h3 className="inline-block mx-3">{user.displayName}</h3>
+            <button onClick={logOut} className="bg-btn rounded p-2">
+              Sign out
+            </button>
+          </div>
+        ) : (
+          <div>
+            <Link to="/sign-in">
+              <button className="bg-btn rounded p-2">Sign in</button>
+            </Link>
+            <Link to="/register">
+              <button className="bg-btn rounded p-2 ml-3">Register</button>
+            </Link>
+          </div>
+        )}
       </div>
     </header>
   );
