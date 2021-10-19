@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 const Service = ({ therapy }) => {
   const { name, img, id, description } = therapy;
   return (
-    <div className="flex flex-col p-3 md:p-0 md:flex-row  justify-between items-center border shadow-sm  ">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+      className="flex flex-col p-3 md:p-0 md:flex-row  justify-between items-center border shadow-sm  "
+    >
       <div className="overflow-hidden">
         <img
           className="h-72 transform hover:scale-125 transition duration-500 ease-in-out "

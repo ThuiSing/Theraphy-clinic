@@ -25,7 +25,7 @@ const ClientReview = () => {
       </h2>
       <div className="grid md:grid-cols-2 gap-x-10 gap-y-5 md:gap-y-0 mt-8">
         {clientTestomonials.map((client) => (
-          <div key={client.key} className="px-3 ">
+          <div key={client.key} data-aos="zoom-in-up" className="px-3 ">
             <div className="testomonials relative bg-secondary px-6 py-10">
               <h2 className="text-secondary">{client.desciption}</h2>
             </div>

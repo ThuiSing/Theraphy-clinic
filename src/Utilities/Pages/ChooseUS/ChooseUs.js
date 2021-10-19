@@ -3,7 +3,10 @@ import img2 from "../../Images/aboutChoose.png";
 
 const ChooseUs = () => {
   return (
-    <div className=" flex flex-col md:flex-row items-center bg-blue my-16">
+    <div
+      data-aos="zoom-out-down"
+      className=" flex flex-col md:flex-row items-center bg-blue my-16"
+    >
       <div className="md:w-1/2 ">
         <img src={img2} alt="" />
       </div>

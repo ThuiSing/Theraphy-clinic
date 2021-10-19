@@ -12,7 +12,12 @@ import Header from "./Utilities/Pages/Shared/Header/Header";
 import Services from "./Utilities/Pages/Shared/Services/Services";
 import SignIn from "./Utilities/Pages/SignIn/SignIn";
 import SingleService from "./Utilities/Pages/SingleService/SingleService";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init({
+  once: true,
+});
 function App() {
   return (
     <div className="App">

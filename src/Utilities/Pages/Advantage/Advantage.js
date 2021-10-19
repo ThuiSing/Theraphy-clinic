@@ -50,6 +50,7 @@ const Advantage = () => {
         {advantagersData.map((data) => (
           <div
             key={data.id}
+            data-aos="fade-left"
             className="flex border advantages  justify-center items-center p-6"
           >
             <div className="md:w-1/5 flex justify-center items-center ">

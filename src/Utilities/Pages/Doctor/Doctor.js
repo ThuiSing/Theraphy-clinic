@@ -2,7 +2,10 @@ import React from "react";
 
 const Doctor = ({ doctor }) => {
   return (
-    <div className="p-4 border bg-white shadow-md doctors-card relative overflow-hidden ">
+    <div
+      data-aos="fade-right"
+      className="p-4 border bg-white shadow-md doctors-card relative overflow-hidden "
+    >
       <div>
         <img className="mx-auto" src={doctor.img} alt="" />
       </div>
