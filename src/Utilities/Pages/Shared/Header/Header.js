@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import logo from "../../../Images/logo.png";
 
 const Header = () => {
   const [bgActive, setBgActive] = useState(false);
@@ -23,7 +24,8 @@ const Header = () => {
       `}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <div>
+        <div className="flex items-center">
+          <img className="mr-2" width="50" src={logo} alt="" />
           <h2 className="text-2xl font-bold">Therapy Clinic </h2>
         </div>
         <span className="lg:hidden">
