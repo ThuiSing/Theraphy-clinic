@@ -1,0 +1,17 @@
+[debug] [2021-10-19T16:48:27.256Z] ----------------------------------------------------------------------
+[debug] [2021-10-19T16:48:27.258Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-19T16:48:27.258Z] CLI Version:   9.20.0
+[debug] [2021-10-19T16:48:27.258Z] Platform:      win32
+[debug] [2021-10-19T16:48:27.258Z] Node Version:  v14.18.0
+[debug] [2021-10-19T16:48:27.259Z] Time:          Tue Oct 19 2021 22:48:27 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-19T16:48:27.259Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-19T16:48:27.304Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-19T16:48:27.304Z] > authorizing via signed-in user (thuisingmong0@gmail.com)
+[debug] [2021-10-19T16:48:27.304Z] [iam] checking project physical-therapy-clinics for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-19T16:48:27.306Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/physical-therapy-clinics:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-19T16:48:38.932Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. socket hang up
+[debug] [2021-10-19T16:48:38.933Z] > refreshing access token with scopes: []
+[debug] [2021-10-19T16:48:38.934Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
