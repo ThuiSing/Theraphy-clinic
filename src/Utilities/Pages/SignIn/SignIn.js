@@ -7,6 +7,7 @@ const SignIn = () => {
   const { GoogleLogIn, logInUsingEmailPass, setUser, setIsLoading } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const location = useLocation();
   const history = useHistory();
   const redirectUrl = location.state?.from || "/";
@@ -27,9 +28,10 @@ const SignIn = () => {
         const user = userCredential.user;
         setUser(user);
         history.push(redirectUrl);
+        setError("");
       })
       .catch((error) => {
-        console.log(error);
+        setError(error.message);
       })
       .finally(() => {
         setIsLoading(false);
@@ -78,6 +80,7 @@ const SignIn = () => {
                 className="w-full py-3 border-b-2 outline-none"
               />
             </div>
+            <h2 className="text-red font-semibold">{error}</h2>
             <button
               onClick={handleSignin}
               type="submit"

@@ -31,12 +31,12 @@ function App() {
             <PrivateRoute path="/services/:id">
               <SingleService />
             </PrivateRoute>
-            <Route path="/about-us">
+            <PrivateRoute path="/about-us">
               <AboutUs />
-            </Route>
-            <Route path="/contact-us">
+            </PrivateRoute>
+            <PrivateRoute path="/contact-us">
               <ContactUs />
-            </Route>
+            </PrivateRoute>
             <Route path="/sign-in">
               <SignIn />
             </Route>
@@ -44,7 +44,6 @@ function App() {
               <Register />
             </Route>
           </Switch>
-
           <Footer />
         </Router>
       </AuthProvider>

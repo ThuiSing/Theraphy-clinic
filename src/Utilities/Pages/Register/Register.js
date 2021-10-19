@@ -24,16 +24,25 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    RegisterNewAccount(email, passWord)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        addName(name);
-        setUser(user);
-        history.push("/");
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+    if (name === "") {
+      setError("Please fill up all first");
+    } else {
+      if (passWord.length < 6) {
+        setError("password should be more than 6 letters");
+      } else {
+        RegisterNewAccount(email, passWord)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            addName(name);
+            setUser(user);
+            history.push("/");
+            setError("");
+          })
+          .catch((error) => {
+            setError(error.message);
+          });
+      }
+    }
   };
   return (
     <div className="min-h-screen container mx-auto py-16">

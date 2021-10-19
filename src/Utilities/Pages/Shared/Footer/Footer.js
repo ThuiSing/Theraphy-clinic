@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-footer text-white py-8 px-3 md:px-0 ">
       <div className="container mx-auto">
         <div>
-          <h2 className="text-3xl font-semibold">Logo</h2>
+          <h2 className="text-3xl font-semibold">Therapy Clinic</h2>
         </div>
         <div className="grid md:grid-cols-4 mt-8 border-b border-gray-700 pb-7 gap-y-4 md:gap-y-0">
           <div>

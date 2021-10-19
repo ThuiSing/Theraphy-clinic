@@ -19,19 +19,19 @@ const Doctor = ({ doctor }) => {
             href="https://www.facebook.com/"
             className="text-3xl text-blue sc-icons"
           >
-            <i class="fab fa-facebook"></i>
+            <i className="fab fa-facebook"></i>
           </a>
           <a
             href="https://twitter.com/"
             className="text-3xl text-blue sc-icons"
           >
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </a>
           <a
             href="https://instagram.com/"
             className="text-3xl text-blue sc-icons"
           >
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </a>
         </div>
       </div>

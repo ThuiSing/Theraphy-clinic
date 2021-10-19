@@ -1,0 +1,20 @@
+.testomonials::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #f6efef;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: -10px;
+}
+.testomonials::before {
+  content: "\f10d";
+  /* tex */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.205);
+  position: absolute;
+  font-size: 3rem;
+  top: 10px;
+  left: 10px;
+}

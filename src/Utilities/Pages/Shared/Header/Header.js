@@ -24,7 +24,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <h2 className="text-2xl font-bold">Logo</h2>
+          <h2 className="text-2xl font-bold">Therapy Clinic </h2>
         </div>
         <span className="lg:hidden">
           {isSideNavigation ? (
