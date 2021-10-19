@@ -3,6 +3,7 @@ import "./App.css";
 import AuthProvider from "./Utilities/context/AuthProvider";
 import AboutUs from "./Utilities/Pages/AboutUs/AboutUs";
 import ContactUs from "./Utilities/Pages/ContactUs/ContactUs";
+import ErrorPage from "./Utilities/Pages/ErrorPage/ErrorPage";
 import Home from "./Utilities/Pages/Home/Home/Home";
 import PrivateRoute from "./Utilities/Pages/PrivateRoute/PrivateRoute";
 import Register from "./Utilities/Pages/Register/Register";
@@ -42,6 +43,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register />
+            </Route>
+            <Route path="*">
+              <ErrorPage />
             </Route>
           </Switch>
           <Footer />

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="banner ">
-      <div className="absolute banner-text w-full h-full flex justify-center items-center">
+      <div className="absolute banner-text py-10 w-full h-full flex justify-center items-center">
         <div className="text-center">
           <h2 className=" text-2xl md:text-5xl text-primary font-bold uppercase">
             Welcome to our Therapy Clinic
@@ -18,7 +18,7 @@ const Banner = () => {
             We Give Solution To Your Pain
           </h4>
           <Link to="/contact-us">
-            <button className="bg-btn text-white px-2 py-1 md:px-3 md:py-2 rounded">
+            <button className="bg-btn text-white px-2 py-1 md:px-3 md:py-2 rounded hover:bg-white hover:text-blue transition-all ">
               Contact Us
             </button>
           </Link>

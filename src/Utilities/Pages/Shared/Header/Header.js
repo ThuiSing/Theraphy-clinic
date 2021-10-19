@@ -168,7 +168,9 @@ const Header = () => {
             ) : (
               <div>
                 <Link to="/sign-in">
-                  <button className="bg-btn rounded p-2">Sign in</button>
+                  <button className="bg-btn rounded p-2 transition-all">
+                    Sign in
+                  </button>
                 </Link>
                 <Link to="/register">
                   <button className="bg-btn rounded p-2 ml-3">Register</button>

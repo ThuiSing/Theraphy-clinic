@@ -23,19 +23,23 @@ const SignIn = () => {
 
   const handleSignin = (e) => {
     e.preventDefault();
-    logInUsingEmailPass(email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        setUser(user);
-        history.push(redirectUrl);
-        setError("");
-      })
-      .catch((error) => {
-        setError(error.message);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
+    if (email === "" || password === "") {
+      setError("Please Fill up First");
+    } else {
+      logInUsingEmailPass(email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          setUser(user);
+          history.push(redirectUrl);
+          setError("");
+        })
+        .catch((error) => {
+          setError(error.message);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    }
   };
 
   const handleGoogle = () => {
