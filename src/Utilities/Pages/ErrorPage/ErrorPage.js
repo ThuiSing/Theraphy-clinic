@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import errorImg from "../../Images/err.png";
 import "./errorPage.css";
 
@@ -13,9 +14,11 @@ const ErrorPage = () => {
           <h3 className="text-2xl md:text-4xl text-secondary font-semibold">
             Opps! Sorry, Page Not Found
           </h3>
-          <button className="bg-btn btn-hover mt-5 px-3 py-3 font-medium rounded transition-all">
-            Go Back Home
-          </button>
+          <Link to="/">
+            <button className="bg-btn btn-hover mt-5 px-3 py-3 font-medium rounded transition-all">
+              Go Back Home
+            </button>
+          </Link>
         </div>
       </div>
     </div>
