@@ -1,0 +1,16 @@
+.doctors-card:hover .social-doctors {
+  bottom: 0px;
+}
+.social-doctors {
+  bottom: -56px;
+  transition: 0.2s ease-in-out;
+}
+.sc-icons {
+  padding: 3px;
+  border-radius: 2px;
+  transition: 0.2s ease-in;
+}
+.sc-icons:hover {
+  background-color: #399fa9;
+  color: white;
+}

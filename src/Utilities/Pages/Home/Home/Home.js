@@ -1,6 +1,7 @@
 import React from "react";
 import Advantage from "../../Advantage/Advantage";
 import ChooseUs from "../../ChooseUS/ChooseUs";
+import Doctors from "../../Doctors/Doctors";
 import Services from "../../Shared/Services/Services";
 import Banner from "../Banner/Banner";
 
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner />
       <Services showAll={false} />
       <Advantage />
+      <Doctors />
       <ChooseUs />
     </div>
   );

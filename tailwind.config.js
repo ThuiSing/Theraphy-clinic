@@ -6,6 +6,7 @@ module.exports = {
       ...theme("colors"),
       primary: "#fffffe",
       secondary: "#f6efef",
+      blueOpacityhalf: " #678d9169",
       blue: "#399fa9",
       footer: "#181818",
       btn: "#4fc4cf",
